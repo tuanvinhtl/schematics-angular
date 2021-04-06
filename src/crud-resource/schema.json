@@ -15,6 +15,23 @@
         "url": {
             "type": "string",
             "x-prompt": "What is resource of the api"
+        },
+        "findOne": {
+            "type": "boolean",
+            "default": false
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path at which to create the component file",
+            "visible": false
+        },
+        "project": {
+            "type": "string",
+            "description": "The name of the project.",
+            "default": {
+                "$source": "projectName"
+            }
         }
     },
     "required": [
